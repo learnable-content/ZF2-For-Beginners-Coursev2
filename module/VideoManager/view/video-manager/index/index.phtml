@@ -1,0 +1,9 @@
+Action "index", controller "Index", module "VideoManager".
+
+<?php print $this->flashMessenger()->render('info'); ?>
+
+<?php print $this->partial('video-records-partial', array(
+    'records' => $this->records
+)); ?>
+
+<?php print $this->render('copyright'); ?>
